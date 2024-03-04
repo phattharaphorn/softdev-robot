@@ -3,8 +3,8 @@ Library    RequestsLibrary
 
 *** Test Cases ***
 true_when_x_is_17
-    [Documentation]    true_when_x_is_11
-    ${resp}=     GET    http://localhost:3000/is_prime/11
+    [Documentation]    true_when_x_is_17
+    ${resp}=     GET    http://localhost:3000/is_prime/17
     Should Be Equal     ${resp.status_code}    ${200}
     Should Be Equal     ${resp.text}    true
     Delete All Sessions
